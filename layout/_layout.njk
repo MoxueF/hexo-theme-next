@@ -11,8 +11,6 @@
   </noscript>
 </head>
 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 <body itemscope itemtype="http://schema.org/WebPage"{% if theme.motion.enable %} class="use-motion"{% endif %}>
   <div class="headband"></div>
 
@@ -50,5 +48,6 @@
   {%- include '_third-party/quicklink.njk' -%}
 
   {{- next_inject('bodyEnd') }}
+  <script src="dist/canvas-nest.js"></script>
 </body>
 </html>
